@@ -1,1 +1,22 @@
-readme
+==Getting started
+#Follow the instructions below if you want to see how Tmts_Java(our framework) works and how an Android test project looks like. If you want to create a new test project then please go to the tutorials page.
+
+#When you have created a new test project you need to add the Tmts_Java jar to the build path. In Eclipse that is done by right clicking on the test project --> Properties --> Java Build Path --> Add (external) Jar.
+
+#Example test project
+In the source code section you will find TmtsTest which is an example test project created in Eclipse to test TmtsApp. TmtsApp is a sample android project.
+
+#In Eclipse click on File --> New --> Project --> Android Project --> Create Project from existing source --> TmtsApp.
+
+#Then you import TmtsApp by clicking on File --> Import --> Existing Project into workspace --> Select  file --> TmtsApp.
+
+#Then you can run these test cases either on the emulator or on device. You right click the test project and select Run As --> Run As Android JUnit Test.
+
+#If you have problems running the test project or some Tmts_Java functionality is not working as it should then please add the following tag to the AndroidManifest.xml:
+
+<uses-sdk android:targetSdkVersion="YOUR_VERSION" /> 
+<instrumentation android:targetPackage="com.taobao.tmts.framework.app" android:name="android.test.InstrumentationTestRunner" />
+
+== License
+
+TMTS is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
