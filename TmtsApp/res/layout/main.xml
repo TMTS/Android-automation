@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+
+	<ImageView android:id="@+id/my_imagevie"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:src="@drawable/imagebg" android:layout_gravity="center" />
+
+	<Gallery android:id="@+id/my_gallery" android:layout_width="wrap_content"
+		android:layout_height="wrap_content" android:layout_gravity="center_horizontal" 
+		android:scrollbarStyle="outsideOverlay"/>
+
+	<Button android:id="@+id/btn_textview_activity"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:text="@string/textview" />
+
+	<Button android:id="@+id/btn_scrollview_activity"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:text="@string/scrollview" />
+
+	<Button android:layout_height="wrap_content" android:id="@+id/btn_webview_activity"
+		android:layout_width="match_parent" android:text="@string/webview" />
+
+	<Button android:id="@+id/btn_listview_activity"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		android:text="@string/listview" />
+
+	<include android:id="@+id/include_checkbox"
+		android:layout_width="match_parent" android:layout_height="wrap_content"
+		layout="@layout/checkbox_layout" />
+		
+</LinearLayout>
